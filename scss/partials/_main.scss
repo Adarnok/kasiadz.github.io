@@ -1,0 +1,39 @@
+section {
+    // minimajla wysokosc - przydatne do mapy bo sie rozciagnie jesli tresci jest wiecej
+    min-height: 80vh;
+    position: relative;
+    
+
+    h2 {
+        font-size: 3.6rem;
+        text-align: center;
+        letter-spacing: .6rem;
+        padding: 4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    .iframe {
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    &:nth-of-type(even) {
+        // robimy tylko jedno wyjscie w gore, bo to się odnosnie pliku css liczy
+        background: url('../img/background1.jpg') center/cover no-repeat;
+        background-attachment: fixed;
+        color: $color-light;
+
+    }
+
+
+}
+
